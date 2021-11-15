@@ -1,12 +1,8 @@
 <body>
   
-  <button onclick = "save()">Increase</button>
+  <button onclick = " $(function(){
+    $.getJSON('global.json',function(data){
+      data.global_Multiplier += 1;
+    })
+  })">Increase</button>
 </body>
-<script>
-  $(function(){
-  $.getJSON('global.json',function(data){
-    data.global_Multiplier += 1;
-  })
-})
- 
-</script>
