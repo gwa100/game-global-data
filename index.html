@@ -1,8 +1,11 @@
 <body>
   
-  <script>
+  <script type = "module">
+    import fs from "fs"
   fetch("global.json").then(response => response.json()).then(data => {
     data.global_Multiplier += 1;
+    fs.writeFileAsync(
     console.log(data.global_Multiplier += 1)
   })</script>
+  <script type = "application/json" src = "./global.json"></script>
 </body>
